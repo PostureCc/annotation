@@ -9,6 +9,10 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 
+/**
+ * @Aspect:开启切面
+ * @Component:将这个类实例化到Spring容器中 相当于在容器中定义了<bean/>
+ * */
 @Aspect
 @Component
 public class LogAspect {

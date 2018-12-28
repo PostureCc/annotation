@@ -6,5 +6,8 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface UserAnnotation {
-    String value() default "";
+
+    String token() default "";
+
+    String role() default "";
 }

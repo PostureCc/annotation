@@ -13,13 +13,13 @@ public class UserController {
         return "test1";
     }
 
-    @UserAnnotation(value = "test2")
+    @UserAnnotation(token = "前端在包头中传过来的token")
     @RequestMapping(value = "test2", method = RequestMethod.GET)
     public String test2(String name, Integer age) {
         return "test2";
     }
 
-    @UserAnnotation(value = "test3")
+
     @RequestMapping(value = "test3", method = RequestMethod.GET)
     public String test3(String name, Integer age) {
         int i = 5 / 0;
